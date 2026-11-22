@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<title>SAM ENGINE DEMO — Temple of the Winged Horde</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="stage">
+    <canvas id="view"></canvas>
+    <canvas id="hud"></canvas>
+  </div>
+
+  <div id="menu" class="overlay">
+    <div class="panel">
+      <h1>SAM&nbsp;ENGINE&nbsp;DEMO</h1>
+      <h2>Temple of the Winged Horde</h2>
+      <p class="sub">
+        One big level, one machine gun. Dodge the winged ones, shoot the runners.<br />
+        Find the <b>big red switch</b> in the west corridor — it opens something.
+      </p>
+
+      <div class="keys">
+        <div><span>W A S D</span><i>move / strafe</i></div>
+        <div><span>mouse</span><i>look (auto-levels)</i></div>
+        <div><span>LMB (hold)</span><i>machine gun, full auto</i></div>
+        <div><span>R</span><i>reload belt</i></div>
+        <div><span>Shift</span><i>sprint</i></div>
+        <div><span>Space</span><i>jump</i></div>
+        <div><span>C</span><i>crouch</i></div>
+        <div><span>E</span><i>use switch / grab powerup</i></div>
+        <div><span>M</span><i>mute</i></div>
+        <div><span>Enter</span><i>restart level</i></div>
+      </div>
+
+      <div id="startBtn" class="cta">CLICK HERE TO PLAY</div>
+      <div class="tiny" id="loadingNote">loading textures &amp; level...</div>
+    </div>
+  </div>
+
+  <div id="hint" class="hint">
+    <div class="row"><span>W A S D</span><i>мove</i><span>mouse</span><i>look</i><span>LMB</span><i>shoot</i></div>
+    <div class="row"><span>R</span><i>reload</i><span>Shift</span><i>sprint</i><span>Space</span><i>jump</i><span>C</span><i>crouch</i><span>E</span><i>use</i><span>Esc</span><i>pause</i></div>
+  </div>
+
+  <script src="vendor/three.min.js"></script>
+  <script src="src/core.js"></script>
+  <script src="src/textures.js"></script>
+  <script src="src/audio.js"></script>
+  <script src="src/fx.js"></script>
+  <script src="src/level.js"></script>
+  <script src="src/enemies.js"></script>
+  <script src="src/weapon.js"></script>
+  <script src="src/player.js"></script>
+  <script src="src/hud.js"></script>
+  <script src="src/main.js"></script>
+</body>
+</html>
